@@ -13,7 +13,9 @@
 		01933B0A283D154F001A44B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01933B08283D154F001A44B7 /* Main.storyboard */; };
 		01933B0C283D1551001A44B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01933B0B283D1551001A44B7 /* Assets.xcassets */; };
 		01933B0F283D1551001A44B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01933B0D283D1551001A44B7 /* LaunchScreen.storyboard */; };
-		01933B17283D22FE001A44B7 /* NeumorphismView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01933B16283D22FE001A44B7 /* NeumorphismView.swift */; };
+		01A901212DABDBD900D6FBEA /* NeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A901202DABDBD700D6FBEA /* NeumorphicView.swift */; };
+		01A901252DABDC1E00D6FBEA /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A901242DABDC1300D6FBEA /* UIColor+Extensions.swift */; };
+		01A901272DABE6F600D6FBEA /* NeumorphicColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A901262DABE6F600D6FBEA /* NeumorphicColorSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,9 @@
 		01933B0B283D1551001A44B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01933B0E283D1551001A44B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01933B10283D1551001A44B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01933B16283D22FE001A44B7 /* NeumorphismView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismView.swift; sourceTree = "<group>"; };
+		01A901202DABDBD700D6FBEA /* NeumorphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicView.swift; sourceTree = "<group>"; };
+		01A901242DABDC1300D6FBEA /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		01A901262DABE6F600D6FBEA /* NeumorphicColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicColorSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +65,23 @@
 				01933B02283D154F001A44B7 /* AppDelegate.swift */,
 				01933B04283D154F001A44B7 /* SceneDelegate.swift */,
 				01933B06283D154F001A44B7 /* ViewController.swift */,
-				01933B16283D22FE001A44B7 /* NeumorphismView.swift */,
+				01A901242DABDC1300D6FBEA /* UIColor+Extensions.swift */,
+				01A9011F2DABDBB900D6FBEA /* Neumorphism */,
 				01933B08283D154F001A44B7 /* Main.storyboard */,
 				01933B0B283D1551001A44B7 /* Assets.xcassets */,
 				01933B0D283D1551001A44B7 /* LaunchScreen.storyboard */,
 				01933B10283D1551001A44B7 /* Info.plist */,
 			);
 			path = NeumorphismSample;
+			sourceTree = "<group>";
+		};
+		01A9011F2DABDBB900D6FBEA /* Neumorphism */ = {
+			isa = PBXGroup;
+			children = (
+				01A901202DABDBD700D6FBEA /* NeumorphicView.swift */,
+				01A901262DABE6F600D6FBEA /* NeumorphicColorSet.swift */,
+			);
+			path = Neumorphism;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01933B07283D154F001A44B7 /* ViewController.swift in Sources */,
+				01A901212DABDBD900D6FBEA /* NeumorphicView.swift in Sources */,
+				01A901272DABE6F600D6FBEA /* NeumorphicColorSet.swift in Sources */,
 				01933B03283D154F001A44B7 /* AppDelegate.swift in Sources */,
-				01933B17283D22FE001A44B7 /* NeumorphismView.swift in Sources */,
+				01A901252DABDC1E00D6FBEA /* UIColor+Extensions.swift in Sources */,
 				01933B05283D154F001A44B7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

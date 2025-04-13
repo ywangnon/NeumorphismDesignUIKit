@@ -11,12 +11,13 @@ class ViewController: UIViewController {
     
     var neumorphicView: NeumorphicView = {
         let view = NeumorphicView()
+        view.isUserInteractionEnabled = true
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    var selectedNeumorphicView: NeumorphicInnerView = {
-        let view = NeumorphicInnerView()
+    var selectedNeumorphicView: NeumorphicView = {
+        let view = NeumorphicView(style: .inner)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -66,7 +67,12 @@ class ViewController: UIViewController {
     }
     
     func setGestures() {
-        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(changeStyle))
+        neumorphicView.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func changeStyle() {
+        neumorphicView.style = neumorphicView.style == .inner ? .outer : .inner
     }
 }
 
